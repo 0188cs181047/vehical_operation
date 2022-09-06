@@ -1,0 +1,10 @@
+body{
+  background-image: url(https://images.unsplash.com/photo-1588357519658-05b3c02f8edc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fHZlaGljbGV8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  color: white;
+}
+#s {
+  color: red;
+}

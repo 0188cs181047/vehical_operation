@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+{% extends 'firstapp/base.html'%}
+{% block body_block%}
+<br>
+<h1>are you sure you want to delete of :<span>{{vehicle.vehicle_number}}</span> !!!</h1>
+<form method="post">
+  {% csrf_token %}
+  <br>
+<hr><br>
+    <input type="submit" class="btn btn-lg btn-danger" value="delete the date" />
+    <a href="/" class="btn btn-lg btn-success">Cancle</a>
+</form>
+{%endblock%}

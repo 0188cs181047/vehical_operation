@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+{% extends 'firstapp/base.html'%}
+{% block body_block%}
+<h1>{{object.vehicle_number}} information is</h1>
+<hr><br>
+<h2> vehicle type is :{{object.vehicle_type}}</h2>
+<br>
+<h2>vehicle model is : {{object.vehicle_model}}</h2>
+<br>
+<h2>vehicle description is :{{object.vehicle_description}}</h2>
+<br>
+
+<a href="/update\{{vehicle.id}}" class="btn btn-lg btn-secondary">update the data</a>
+<a href="/delete\{{vehicle.id}}" class="btn btn-lg btn-danger">delete the data</a>
+{%endblock%}

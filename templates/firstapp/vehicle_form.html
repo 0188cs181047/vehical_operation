@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+{% extends 'firstapp/base.html'%}
+{% block body_block%}
+<h1>insrt/create information of the vehicle </h1>
+<hr><br>
+<form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <input type="submit" class="btn btn-lg btn-info" value="updated info." />
+    <a href="/" class="btn btn-lg btn-warning">see the data list</a>
+</form>
+{%endblock%}
